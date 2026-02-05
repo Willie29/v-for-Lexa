@@ -8,8 +8,8 @@ let dots = 0;
 
 // Animasi titik "Scanning..."
 const scanningInterval = setInterval(() => {
-  dots = (dots + 1) % 4;
-  statusText.textContent = "Scanning" + ".".repeat(dots);
+  dots = (dots + 1) % 5;
+  statusText.textContent = "Scanning Face" + ".".repeat(dots);
 }, 500);
 
 // Setelah 3 detik → face confirmed
@@ -37,6 +37,7 @@ setTimeout(() => {
 
 // Tombol lanjut (sementara)
 continueBtn.addEventListener("click", () => {
-  alert("Lanjut ke halaman berikutnya 💗");
+  window.location.reload();
+  // alert("Lanjut ke halaman berikutnya 💗");
   // nanti: window.location.href = "page2.html";
 });
