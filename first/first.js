@@ -38,5 +38,5 @@ setTimeout(() => {
 continueBtn.addEventListener("click", () => {
   // window.location.reload();
   // alert("Lanjut ke halaman berikutnya 💗");
-  window.location.href = "./second/page2.html";
+  // window.location.href = "./second/page2.html";
 });
