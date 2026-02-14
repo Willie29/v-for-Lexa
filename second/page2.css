@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -90,6 +95,17 @@ button {
   top: 0;
   position: relative;
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.redirect-btn {
+  background-color: #7a1f3d;
+  color: white;
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.redirect-btn:hover {
+    background-color: #ff8fb1;
+    transform: scale(1.05);
 }
 
 /* RESULT */
